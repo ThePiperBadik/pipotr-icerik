@@ -1,0 +1,57 @@
+{
+ "surum": "v2",
+ "diller": {
+  "en": [
+   "damgalar",
+   "harmanlar",
+   "icerik-malzemeler",
+   "icerik-pipo-markalari",
+   "icerik-pipo-sekilleri",
+   "icerik-rehber",
+   "icerik-tarih-kultur",
+   "icerik-tarihlendirme",
+   "icerik-tutun-markalari",
+   "icerik-tutunler",
+   "temel"
+  ],
+  "de": [
+   "damgalar",
+   "harmanlar",
+   "icerik-malzemeler",
+   "icerik-pipo-markalari",
+   "icerik-pipo-sekilleri",
+   "icerik-rehber",
+   "icerik-tarih-kultur",
+   "icerik-tarihlendirme",
+   "icerik-tutun-markalari",
+   "icerik-tutunler",
+   "temel"
+  ],
+  "fr": [
+   "damgalar",
+   "harmanlar",
+   "icerik-malzemeler",
+   "icerik-pipo-markalari",
+   "icerik-pipo-sekilleri",
+   "icerik-rehber",
+   "icerik-tarih-kultur",
+   "icerik-tarihlendirme",
+   "icerik-tutun-markalari",
+   "icerik-tutunler",
+   "temel"
+  ],
+  "zh": [
+   "damgalar",
+   "harmanlar",
+   "icerik-malzemeler",
+   "icerik-pipo-markalari",
+   "icerik-pipo-sekilleri",
+   "icerik-rehber",
+   "icerik-tarih-kultur",
+   "icerik-tarihlendirme",
+   "icerik-tutun-markalari",
+   "icerik-tutunler",
+   "temel"
+  ]
+ }
+}
