@@ -4,4 +4,7 @@ PipoTr mobil uygulamasının herkese açık içerik deposu.
 
 - `gizlilik.html`, `kosullar.html`, `destek.html` — 8 dilde yasal ve destek sayfaları (GitHub Pages)
 - `manifest.json`, `v*/<dil>/*.json` — uygulamanın indirdiği dil paketleri (jsDelivr üzerinden)
-- `v2/tr/*.json` — Türkçe asıl veri (`pipotr-app` deposundaki `src/data/*.json` dosyalarının aynısı; ISPE uygulaması bunları kendi içinde taşır, IPC bu klasörden okur). `manifest.json`'a eklenmedi; ISPE'nin dil paketi akışı değişmez.
+- `v3/<dil>/*.json` — tek paket sürümü (ThePiperBadik/ipc#840): satıcı sitelerine giden bağlantılar, satıcıyı anan kaynak satırları ve harman metinlerindeki tavsiye/övgü cümleleri çıkarılmış dil paketleri. Kurallar IPC deposundadır (`src/tools/ispe-hosts.txt` [satici], `ispe-neutral.mjs`); `pipotr-app` deposundaki `scripts/ispe_tarafsiz.mjs paket` ile üretilir, elle düzenlenmez. `v3/tr/*.json` Türkçe asıl veridir (uygulama bunu kendi içinde taşır; IPC eşitlemesi ve pipotr-site bu klasörü manifest sürümünden bulur).
+- `manifest.json` `surum` geçerli paket klasörünü gösterir. Uygulamalar (eski sürümler dahil) paketi bu klasörden indirir; önbellek anahtarı sürüm klasörü olduğu için eski önbellek kullanılmaz. **Paketi okuyan her şey klasör adını `manifest.json` `surum`'dan okur**, sabit `v2`/`v3` yazmaz.
+- Kurallar değişince yeni sürüm **yeni klasöre** yazılır (`paket v4`) ve eski klasör aynı PR'da silinir: depoda hep tek sürüm durur. Sebep: jsDelivr'in belgeli paket sınırı 150 MB; iki tam sürüm ~207 MB eder (v2 + v3, 17 Ekim). Silinen sürüm git geçmişinde kalır (`v2`: d854935).
+- `v2/` 20 Ekim 2026'da kaldırıldı (içeriği `v3`'te süzülmüş olarak var). Süzülmemiş tr/en harman metninin hizası `pipotr-app` `data-raw/harman-hiza.json.gz`'dedir.
