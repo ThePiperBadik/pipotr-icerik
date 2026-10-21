@@ -272,7 +272,7 @@ h1{font:700 28px Georgia,serif;margin:14px 0 0}nav{display:flex;flex-wrap:wrap;g
 nav button{border:1px solid rgba(243,201,120,.55);background:transparent;color:var(--brass);border-radius:99px;padding:8px 12px;min-height:44px;font-size:14px;cursor:pointer}
 nav button.on{background:var(--brass);color:#1A1206}main{padding:20px 16px 60px}section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
 h2{font:700 18px Georgia,serif;margin:0 0 6px;color:var(--ink)}p{margin:0;color:var(--soft)}.upd{color:var(--muted);font-size:13px;margin-top:18px}
-a{color:var(--link)}.mail{font-weight:600}`;
+a{color:var(--link);overflow-wrap:anywhere}p{overflow-wrap:anywhere}.mail{font-weight:600}`;
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 // Bölüm metni bilinçli HTML içerir (bağlantılar); başlıklar kaçışlanır.
