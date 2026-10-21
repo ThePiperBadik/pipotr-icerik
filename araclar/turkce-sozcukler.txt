@@ -1,0 +1,28 @@
+# Çeviri dillerinde (tr dışı) görülürse Türkçe sızıntı sayılan, Türkçeye özgü harf içermeyen ya da sık sızan Türkçe sözcükler.
+# Başka bir dilde de sözcük olanlar (ör. "ve", "de") bilerek yok. Bir satırda bir sözcük; büyük/küçük harf fark etmez.
+
+ile
+bir
+olarak
+gibi
+daha
+için
+olan
+kadar
+sonra
+değil
+hakkında
+maddesi
+maddesinde
+pipo
+pipolar
+pipoları
+piponun
+harman
+harmanı
+harmanları
+tütün
+tütünü
+yılında
+üretici
+ustası

@@ -1,0 +1,2894 @@
+{
+ "surum": "v3",
+ "aciklama": "U-D1 dil kalitesi (sahip kararı 71): noindex YOK; nedenli maddeler dilin \"duzeltilecekMaddeler\" listesinde, nedenli madde oranı %5'i aşan dil \"duzeltilecek: true\". Üreten: araclar/kalite.mjs.",
+ "kurallar": {
+  "esikDil": 0.05,
+  "kisaOzetSozcuk": 25,
+  "nedenler": [
+   "kapsam-baslik",
+   "kapsam-ozet",
+   "kapsam-govde",
+   "sizinti",
+   "bos-blok",
+   "satici",
+   "tavsiye"
+  ],
+  "ipcKurallari": {
+   "ispe-hosts.txt": "06db7f3bb708",
+   "ispe-neutral.mjs": "1a306af26448",
+   "ispe-guard.mjs": "1c54cf99401d"
+  },
+  "ozelAdlar": 73,
+  "turkceSozcukler": 25
+ },
+ "ozet": {
+  "tr": "32/1236 nedenli (%2.6) · sızıntı 0 · başlık/özet TR harf 0 · satıcı 0 · tavsiye (tütün) 48 · bağlantı 6281 (%100) · kısa özet 781",
+  "en": "43/1236 nedenli (%3.5) · sızıntı 9 · başlık/özet TR harf 37 · satıcı 0 · tavsiye (tütün) 52 · bağlantı 0 (%0) · kısa özet 279",
+  "de": "35/1236 nedenli (%2.8) · sızıntı 7 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 0 (%0) · kısa özet 440",
+  "fr": "50/1236 nedenli (%4.0) · sızıntı 10 · başlık/özet TR harf 26 · satıcı 0 · tavsiye (tütün) 66 · bağlantı 0 (%0) · kısa özet 111",
+  "es": "39/1236 nedenli (%3.2) · sızıntı 4 · başlık/özet TR harf 30 · satıcı 0 · tavsiye (tütün) 67 · bağlantı 0 (%0) · kısa özet 122",
+  "nl": "32/1236 nedenli (%2.6) · sızıntı 6 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 49 · bağlantı 0 (%0) · kısa özet 310",
+  "sv": "42/1236 nedenli (%3.4) · sızıntı 11 · başlık/özet TR harf 40 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 0 (%0) · kısa özet 535",
+  "da": "38/1236 nedenli (%3.1) · sızıntı 9 · başlık/özet TR harf 35 · satıcı 0 · tavsiye (tütün) 44 · bağlantı 0 (%0) · kısa özet 454",
+  "ja": "8/1236 nedenli (%0.6) · sızıntı 8 · başlık/özet TR harf 7 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 0 (%0) · kısa özet 5",
+  "zh": "23/1236 nedenli (%1.9) · sızıntı 23 · başlık/özet TR harf 18 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 0 (%0) · kısa özet 211"
+ },
+ "diller": {
+  "tr": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0259,
+   "baglantiOrani": 1,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 32,
+    "kapsamEksik": 0,
+    "sizintiMadde": 0,
+    "baslikOzetTurkceHarf": 0,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 48,
+    "tavsiyeBilgi": 583,
+    "baglanti": 6281,
+    "baglantiHedefsiz": 1055,
+    "kisaOzet": 781
+   },
+   "duzeltilecekMaddeler": [
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari",
+    "aromatik-harmanlar",
+    "balkan-harmani",
+    "burley",
+    "cavendish",
+    "codger-harmanlari",
+    "dunhill-tutun-harmanlari",
+    "esoterica-tobacciana",
+    "gawith-hoggarth-co",
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis",
+    "ingiliz-harmani",
+    "izmir-tutunu",
+    "j-b-priestley-romanci-ve-pipo-meraklisi",
+    "lane-limited",
+    "navy-flake-ve-rom-gelenegi",
+    "one-cikan-sark-tutunu-harmanlari",
+    "perique",
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari",
+    "pipo-haznesi-olcusu",
+    "pipo-icicilerinin-hicivli-portreleri",
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi",
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz",
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari",
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir",
+    "pipolu-bastonlar",
+    "seasmoke-pipes",
+    "sigara-paketi-kartlari-ve-pipo-konulu-diziler",
+    "sos-ve-aromalandirma",
+    "tobacconist-university",
+    "tutun-kesimleri",
+    "tutun-kutusu-kavanozu-ve-tenekesi",
+    "virginia"
+   ],
+   "maddeler": {
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "aromatik-harmanlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "balkan-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "burley": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "cavendish": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "dunhill-tutun-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "esoterica-tobacciana": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "gawith-hoggarth-co": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "ingiliz-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "j-b-priestley-romanci-ve-pipo-meraklisi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2,
+     "baglantiHedefsiz": 1
+    },
+    "lane-limited": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "navy-flake-ve-rom-gelenegi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "one-cikan-sark-tutunu-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "perique": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-haznesi-olcusu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-icicilerinin-hicivli-portreleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1,
+     "baglantiHedefsiz": 1
+    },
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "pipolu-bastonlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1,
+     "baglantiHedefsiz": 1
+    },
+    "seasmoke-pipes": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2,
+     "baglantiHedefsiz": 2
+    },
+    "sigara-paketi-kartlari-ve-pipo-konulu-diziler": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "sos-ve-aromalandirma": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tobacconist-university": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "tutun-kesimleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "tutun-kutusu-kavanozu-ve-tenekesi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "virginia": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    }
+   }
+  },
+  "en": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0348,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 43,
+    "kapsamEksik": 0,
+    "sizintiMadde": 9,
+    "baslikOzetTurkceHarf": 37,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 52,
+    "tavsiyeBilgi": 617,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 279
+   },
+   "duzeltilecekMaddeler": [
+    "a-tale-of-two-latakias",
+    "altinok",
+    "aromatik-harmanlar",
+    "balkan-harmani",
+    "cavendish",
+    "codger-harmanlari",
+    "cubuk",
+    "dunhill-tutun-harmanlari",
+    "esoterica-tobacciana",
+    "g-l-pease",
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis",
+    "ingiliz-harmani",
+    "izmir-tutunu",
+    "j-b-priestley-romanci-ve-pipo-meraklisi",
+    "lane-limited",
+    "mcclelland-tobacco-company",
+    "navy-flake-ve-rom-gelenegi",
+    "one-cikan-sark-tutunu-harmanlari",
+    "osmanlida-cubuk-kulturu",
+    "perique",
+    "pipo-anatomisi",
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari",
+    "pipo-haznesi-olcusu",
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi",
+    "pipo-sozcugunun-kokeni",
+    "pipo-tutunu",
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz",
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari",
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir",
+    "pipolu-bastonlar",
+    "pipsan-pipolari",
+    "pres-tutunler-ve-flake-piposu-kavrami",
+    "seasmoke-pipes",
+    "sigara-paketi-kartlari-ve-pipo-konulu-diziler",
+    "sos-ve-aromalandirma",
+    "tobacconist-university",
+    "turkiyede-pipo-topluluklari-ve-kaynaklar",
+    "tutun-kesimleri",
+    "tutun-kurleme-yontemleri",
+    "tutun-kutusu-kavanozu-ve-tenekesi",
+    "tutunun-osmanliya-gelisi",
+    "tutunun-yillandirilmasi",
+    "virginia"
+   ],
+   "maddeler": {
+    "a-tale-of-two-latakias": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "aromatik-harmanlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "balkan-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "cavendish": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "cubuk": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "çıbık"
+     ]
+    },
+    "dunhill-tutun-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "esoterica-tobacciana": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "g-l-pease": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "ingiliz-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti",
+      "tavsiye"
+     ],
+     "sizinti": [
+      "salaş"
+     ],
+     "tavsiye": 1
+    },
+    "j-b-priestley-romanci-ve-pipo-meraklisi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "lane-limited": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "mcclelland-tobacco-company": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "navy-flake-ve-rom-gelenegi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "one-cikan-sark-tutunu-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "osmanlida-cubuk-kulturu": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "şeyhülislam"
+     ]
+    },
+    "perique": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-anatomisi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Ağız",
+      "Ağızlık",
+      "Isırma",
+      "Yarık",
+      "kanalı",
+      "kenarı",
+      "zıvana"
+     ]
+    },
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-haznesi-olcusu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-sozcugunun-kokeni": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "pipo"
+     ]
+    },
+    "pipo-tutunu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 4
+    },
+    "pipolu-bastonlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipsan-pipolari": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Pipoları"
+     ]
+    },
+    "pres-tutunler-ve-flake-piposu-kavrami": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "seasmoke-pipes": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "sigara-paketi-kartlari-ve-pipo-konulu-diziler": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "sos-ve-aromalandirma": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tobacconist-university": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "turkiyede-pipo-topluluklari-ve-kaynaklar": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "lületaşı"
+     ]
+    },
+    "tutun-kesimleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "tutun-kurleme-yontemleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutun-kutusu-kavanozu-ve-tenekesi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutunun-osmanliya-gelisi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "şeyhülislam"
+     ]
+    },
+    "tutunun-yillandirilmasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "virginia": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    }
+   }
+  },
+  "de": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0283,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 35,
+    "kapsamEksik": 0,
+    "sizintiMadde": 7,
+    "baslikOzetTurkceHarf": 36,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 45,
+    "tavsiyeBilgi": 463,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 440
+   },
+   "duzeltilecekMaddeler": [
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari",
+    "altinok",
+    "aromatik-harmanlar",
+    "balkan-harmani",
+    "cavendish",
+    "codger-harmanlari",
+    "cubuk",
+    "dunhill-tutun-harmanlari",
+    "esoterica-tobacciana",
+    "g-l-pease",
+    "gawith-hoggarth-co",
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis",
+    "ingiliz-harmani",
+    "izmir-tutunu",
+    "lane-limited",
+    "navy-flake-ve-rom-gelenegi",
+    "one-cikan-sark-tutunu-harmanlari",
+    "osmanlida-cubuk-kulturu",
+    "perique",
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari",
+    "pipo-haznesi-olcusu",
+    "pipo-icicilerinin-hicivli-portreleri",
+    "pipo-tutunu",
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari",
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir",
+    "pipolu-bastonlar",
+    "pipsan-pipolari",
+    "pres-tutunler-ve-flake-piposu-kavrami",
+    "sot-weed-ve-little-ladell-unutulmus-iki-tutun-terimi",
+    "tobacconist-university",
+    "tutun-kesimleri",
+    "tutun-kutusu-kavanozu-ve-tenekesi",
+    "tutunun-osmanliya-gelisi",
+    "tutunun-yillandirilmasi",
+    "virginia"
+   ],
+   "maddeler": {
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "aromatik-harmanlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "balkan-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 5
+    },
+    "cavendish": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "cubuk": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "çıbık",
+      "İmame"
+     ]
+    },
+    "dunhill-tutun-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "esoterica-tobacciana": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Yıllandırma"
+     ]
+    },
+    "g-l-pease": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "gawith-hoggarth-co": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "ingiliz-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti",
+      "tavsiye"
+     ],
+     "sizinti": [
+      "salaş",
+      "ızgara"
+     ],
+     "tavsiye": 1
+    },
+    "lane-limited": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "navy-flake-ve-rom-gelenegi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "one-cikan-sark-tutunu-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "osmanlida-cubuk-kulturu": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "İmame",
+      "Şeyhülislam"
+     ]
+    },
+    "perique": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-haznesi-olcusu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-icicilerinin-hicivli-portreleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-tutunu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "pipolu-bastonlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipsan-pipolari": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Pipoları"
+     ]
+    },
+    "pres-tutunler-ve-flake-piposu-kavrami": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "sot-weed-ve-little-ladell-unutulmus-iki-tutun-terimi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tobacconist-university": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutun-kesimleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "tutun-kutusu-kavanozu-ve-tenekesi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutunun-osmanliya-gelisi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Şeyhülislam"
+     ]
+    },
+    "tutunun-yillandirilmasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "virginia": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    }
+   }
+  },
+  "fr": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0405,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 50,
+    "kapsamEksik": 0,
+    "sizintiMadde": 10,
+    "baslikOzetTurkceHarf": 26,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 66,
+    "tavsiyeBilgi": 667,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 111
+   },
+   "duzeltilecekMaddeler": [
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari",
+    "a-tale-of-two-latakias",
+    "altinok",
+    "aromatik-harmanlar",
+    "balkan-harmani",
+    "burley",
+    "cavendish",
+    "codger-harmanlari",
+    "constantinos-zissis",
+    "cubuk",
+    "dunhill-tutun-harmanlari",
+    "eski-pipo-ve-tutun-kitaplarinin-yeniden-basimi",
+    "eski-ticaret-basininda-pipo-ve-tutun-olgular-ve-efsaneler",
+    "eskisehir-lule-tasi-oymaciligi",
+    "esoterica-tobacciana",
+    "frazing-machine",
+    "g-l-pease",
+    "gawith-hoggarth-co",
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis",
+    "ingiliz-harmani",
+    "izmir-tutunu",
+    "j-b-priestley-romanci-ve-pipo-meraklisi",
+    "lane-limited",
+    "mac-baren",
+    "one-cikan-sark-tutunu-harmanlari",
+    "one-cikan-virginia-harmanlari",
+    "perique",
+    "pipo-haznesi-olcusu",
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi",
+    "pipo-literaturunun-kuresellesmesi",
+    "pipo-sozcugunun-kokeni",
+    "pipo-tutunu",
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari",
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir",
+    "pipolu-bastonlar",
+    "pres-tutunler-ve-flake-piposu-kavrami",
+    "samuel-gawith",
+    "seasmoke-pipes",
+    "sigara-paketi-kartlari-ve-pipo-konulu-diziler",
+    "siyahi",
+    "sos-ve-aromalandirma",
+    "spanu",
+    "sven-knudsen",
+    "tobacconist-university",
+    "tutun-kesimleri",
+    "tutun-kutusu-kavanozu-ve-tenekesi",
+    "tutunun-yillandirilmasi",
+    "virginia",
+    "virginia-perique-harmani",
+    "yenice-tutunu"
+   ],
+   "maddeler": {
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 5
+    },
+    "a-tale-of-two-latakias": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "aromatik-harmanlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "balkan-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "burley": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "cavendish": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "constantinos-zissis": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ile"
+     ]
+    },
+    "cubuk": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "çıbık"
+     ]
+    },
+    "dunhill-tutun-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "eski-pipo-ve-tutun-kitaplarinin-yeniden-basimi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "eski-ticaret-basininda-pipo-ve-tutun-olgular-ve-efsaneler": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "eskisehir-lule-tasi-oymaciligi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "tandırlama"
+     ]
+    },
+    "esoterica-tobacciana": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "frazing-machine": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "kalıp"
+     ]
+    },
+    "g-l-pease": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "gawith-hoggarth-co": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "ingiliz-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "salaş",
+      "ızgara"
+     ]
+    },
+    "j-b-priestley-romanci-ve-pipo-meraklisi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "lane-limited": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "mac-baren": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "one-cikan-sark-tutunu-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "one-cikan-virginia-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "perique": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-haznesi-olcusu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-literaturunun-kuresellesmesi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-sozcugunun-kokeni": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "pipo"
+     ]
+    },
+    "pipo-tutunu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 4
+    },
+    "pipolu-bastonlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pres-tutunler-ve-flake-piposu-kavrami": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "samuel-gawith": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "seasmoke-pipes": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "sigara-paketi-kartlari-ve-pipo-konulu-diziler": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "siyahi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ile"
+     ]
+    },
+    "sos-ve-aromalandirma": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "spanu": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ile"
+     ]
+    },
+    "sven-knudsen": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ile"
+     ]
+    },
+    "tobacconist-university": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "tutun-kesimleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutun-kutusu-kavanozu-ve-tenekesi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutunun-yillandirilmasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "virginia": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "virginia-perique-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "yenice-tutunu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    }
+   }
+  },
+  "es": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0316,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 39,
+    "kapsamEksik": 0,
+    "sizintiMadde": 4,
+    "baslikOzetTurkceHarf": 30,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 67,
+    "tavsiyeBilgi": 724,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 122
+   },
+   "duzeltilecekMaddeler": [
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari",
+    "a-tale-of-two-latakias",
+    "altinok",
+    "aromatik-harmanlar",
+    "balkan-harmani",
+    "bugunun-pipo-tutunu-piyasasi",
+    "cavendish",
+    "codger-harmanlari",
+    "cubuk",
+    "dunhill-tutun-harmanlari",
+    "eski-pipo-ve-tutun-kitaplarinin-yeniden-basimi",
+    "esoterica-tobacciana",
+    "g-l-pease",
+    "gawith-hoggarth-co",
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis",
+    "ingiliz-harmani",
+    "izmir-tutunu",
+    "lakeland-tarzi",
+    "lane-limited",
+    "mac-baren",
+    "mcclelland-tobacco-company",
+    "one-cikan-sark-tutunu-harmanlari",
+    "pipo-haznesi-olcusu",
+    "pipo-icicilerinin-hicivli-portreleri",
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi",
+    "pipo-sozcugunun-kokeni",
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz",
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari",
+    "pipo-ve-tutun-kitaplarinda-yayinciligin-degisimi-vanity",
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir",
+    "pipolu-bastonlar",
+    "pres-tutunler-ve-flake-piposu-kavrami",
+    "seasmoke-pipes",
+    "tobacconist-university",
+    "tutun-kesimleri",
+    "tutun-kurleme-yontemleri",
+    "tutun-kutusu-kavanozu-ve-tenekesi",
+    "tutunun-yillandirilmasi",
+    "virginia"
+   ],
+   "maddeler": {
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "a-tale-of-two-latakias": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "aromatik-harmanlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 5
+    },
+    "balkan-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 4
+    },
+    "bugunun-pipo-tutunu-piyasasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "cavendish": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "cubuk": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "çıbık"
+     ]
+    },
+    "dunhill-tutun-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "eski-pipo-ve-tutun-kitaplarinin-yeniden-basimi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "esoterica-tobacciana": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "g-l-pease": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "gawith-hoggarth-co": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "ingiliz-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti",
+      "tavsiye"
+     ],
+     "sizinti": [
+      "salaş",
+      "ızgara"
+     ],
+     "tavsiye": 1
+    },
+    "lakeland-tarzi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "lane-limited": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "mac-baren": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "mcclelland-tobacco-company": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "one-cikan-sark-tutunu-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "pipo-haznesi-olcusu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-icicilerinin-hicivli-portreleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-sozcugunun-kokeni": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "pipo"
+     ]
+    },
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-ve-tutun-kitaplarinda-yayinciligin-degisimi-vanity": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 4
+    },
+    "pipolu-bastonlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "pres-tutunler-ve-flake-piposu-kavrami": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "seasmoke-pipes": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "tobacconist-university": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 5
+    },
+    "tutun-kesimleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "tutun-kurleme-yontemleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutun-kutusu-kavanozu-ve-tenekesi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutunun-yillandirilmasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "virginia": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    }
+   }
+  },
+  "nl": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0259,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 32,
+    "kapsamEksik": 0,
+    "sizintiMadde": 6,
+    "baslikOzetTurkceHarf": 36,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 49,
+    "tavsiyeBilgi": 632,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 310
+   },
+   "duzeltilecekMaddeler": [
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari",
+    "altinok",
+    "aromatik-harmanlar",
+    "balkan-harmani",
+    "cavendish",
+    "codger-harmanlari",
+    "cubuk",
+    "dunhill-tutun-harmanlari",
+    "eskisehir-lule-tasi-oymaciligi",
+    "esoterica-tobacciana",
+    "g-l-pease",
+    "gawith-hoggarth-co",
+    "ingiliz-harmani",
+    "izmir-tutunu",
+    "lane-limited",
+    "mcclelland-tobacco-company",
+    "navy-flake-ve-rom-gelenegi",
+    "one-cikan-sark-tutunu-harmanlari",
+    "perique",
+    "pipo-icicilerinin-hicivli-portreleri",
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi",
+    "pipo-sozcugunun-kokeni",
+    "pipo-tutunu",
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz",
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari",
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir",
+    "pipolu-bastonlar",
+    "pipsan-pipolari",
+    "pres-tutunler-ve-flake-piposu-kavrami",
+    "tobacconist-university",
+    "tutun-kesimleri",
+    "virginia"
+   ],
+   "maddeler": {
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "aromatik-harmanlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 5
+    },
+    "balkan-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 4
+    },
+    "cavendish": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "cubuk": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "çıbık"
+     ]
+    },
+    "dunhill-tutun-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "eskisehir-lule-tasi-oymaciligi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "kabasını",
+      "lületaşı",
+      "tandırlama",
+      "çırpma"
+     ]
+    },
+    "esoterica-tobacciana": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "g-l-pease": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "gawith-hoggarth-co": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "ingiliz-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti",
+      "tavsiye"
+     ],
+     "sizinti": [
+      "salaş",
+      "ızgara"
+     ],
+     "tavsiye": 1
+    },
+    "lane-limited": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "mcclelland-tobacco-company": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 5
+    },
+    "navy-flake-ve-rom-gelenegi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "one-cikan-sark-tutunu-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "perique": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-icicilerinin-hicivli-portreleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-sozcugunun-kokeni": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "pipo"
+     ]
+    },
+    "pipo-tutunu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipolu-bastonlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipsan-pipolari": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Pipoları"
+     ]
+    },
+    "pres-tutunler-ve-flake-piposu-kavrami": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tobacconist-university": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 4
+    },
+    "tutun-kesimleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "virginia": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    }
+   }
+  },
+  "sv": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.034,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 42,
+    "kapsamEksik": 0,
+    "sizintiMadde": 11,
+    "baslikOzetTurkceHarf": 40,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 45,
+    "tavsiyeBilgi": 464,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 535
+   },
+   "duzeltilecekMaddeler": [
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari",
+    "a-tale-of-two-latakias",
+    "altinok",
+    "aromatik-harmanlar",
+    "balkan-harmani",
+    "bay-pipe",
+    "bugunun-pipo-tutunu-piyasasi",
+    "cavendish",
+    "codger-harmanlari",
+    "cubuk",
+    "erin-go-bragh-irlanda-sloganini-tasiyan-pipo-serisi",
+    "eskisehir-lule-tasi-oymaciligi",
+    "esoterica-tobacciana",
+    "g-l-pease",
+    "gawith-hoggarth-co",
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis",
+    "ingiliz-harmani",
+    "izmir-tutunu",
+    "j-b-priestley-romanci-ve-pipo-meraklisi",
+    "kalabas-pipo",
+    "lane-limited",
+    "mcclelland-tobacco-company",
+    "ozark-mountain-briars-yedi-yillik-bir-amerikan-tezgahi",
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari",
+    "pipo-icicilerinin-hicivli-portreleri",
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi",
+    "pipo-sozcugunun-kokeni",
+    "pipo-tutunu",
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz",
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari",
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir",
+    "pipolu-bastonlar",
+    "pipsan-pipolari",
+    "pres-tutunler-ve-flake-piposu-kavrami",
+    "tobacconist-university",
+    "trever-talbertin-ince-bicimlendirme-yontemi",
+    "tutun-kesimleri",
+    "tutun-kurleme-yontemleri",
+    "tutun-kutusu-kavanozu-ve-tenekesi",
+    "tutunun-yillandirilmasi",
+    "virginia",
+    "virginia-perique-harmani"
+   ],
+   "maddeler": {
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "a-tale-of-two-latakias": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "aromatik-harmanlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "balkan-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "bay-pipe": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Lületaşı",
+      "Sanatları"
+     ]
+    },
+    "bugunun-pipo-tutunu-piyasasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "cavendish": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "cubuk": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "çıbık",
+      "İmame"
+     ]
+    },
+    "erin-go-bragh-irlanda-sloganini-tasiyan-pipo-serisi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Sloganını",
+      "İrlanda"
+     ]
+    },
+    "eskisehir-lule-tasi-oymaciligi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "tandırlama"
+     ]
+    },
+    "esoterica-tobacciana": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "g-l-pease": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "gawith-hoggarth-co": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "ingiliz-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti",
+      "tavsiye"
+     ],
+     "sizinti": [
+      "salaş",
+      "ızgara"
+     ],
+     "tavsiye": 1
+    },
+    "j-b-priestley-romanci-ve-pipo-meraklisi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "kalabas-pipo": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Kalabaş"
+     ]
+    },
+    "lane-limited": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "mcclelland-tobacco-company": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "ozark-mountain-briars-yedi-yillik-bir-amerikan-tezgahi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Tezgâhı",
+      "Yıllık"
+     ]
+    },
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-icicilerinin-hicivli-portreleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-sozcugunun-kokeni": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "pipo"
+     ]
+    },
+    "pipo-tutunu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-tutunu-tadimi-daha-disiplinli-olmali-miyiz": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-tutunu-uygulamalari-icin-xml-standartlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pipolu-bastonlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipsan-pipolari": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Pipları"
+     ]
+    },
+    "pres-tutunler-ve-flake-piposu-kavrami": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tobacconist-university": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "trever-talbertin-ince-bicimlendirme-yontemi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "İnce"
+     ]
+    },
+    "tutun-kesimleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutun-kurleme-yontemleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutun-kutusu-kavanozu-ve-tenekesi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "tutunun-yillandirilmasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "virginia": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "virginia-perique-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    }
+   }
+  },
+  "da": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0307,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 38,
+    "kapsamEksik": 0,
+    "sizintiMadde": 9,
+    "baslikOzetTurkceHarf": 35,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 44,
+    "tavsiyeBilgi": 497,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 454
+   },
+   "duzeltilecekMaddeler": [
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari",
+    "a-tale-of-two-latakias",
+    "altinok",
+    "aromatik-harmanlar",
+    "balkan-harmani",
+    "bugunun-pipo-tutunu-piyasasi",
+    "burley",
+    "cavendish",
+    "codger-harmanlari",
+    "cubuk",
+    "dunhill-tutun-harmanlari",
+    "eski-ticaret-basininda-pipo-ve-tutun-olgular-ve-efsaneler",
+    "eskisehir-lule-tasi-oymaciligi",
+    "esoterica-tobacciana",
+    "g-l-pease",
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis",
+    "ingiliz-harmani",
+    "izmir-tutunu",
+    "lane-limited",
+    "mcclelland-tobacco-company",
+    "osmanlida-cubuk-kulturu",
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari",
+    "pipo-haznesi-olcusu",
+    "pipo-icicilerinin-hicivli-portreleri",
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi",
+    "pipo-sozcugunun-kokeni",
+    "pipo-tutunu",
+    "pres-tutunler-ve-flake-piposu-kavrami",
+    "seasmoke-pipes",
+    "sot-weed-ve-little-ladell-unutulmus-iki-tutun-terimi",
+    "sutliff-tobacco",
+    "tobacconist-university",
+    "turkiyede-pipo-topluluklari-ve-kaynaklar",
+    "tutun-kesimleri",
+    "tutun-kurleme-yontemleri",
+    "tutunun-yillandirilmasi",
+    "ulkesi-belirsiz-markalar-pipo-markalari-dizini-1",
+    "virginia"
+   ],
+   "maddeler": {
+    "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "a-tale-of-two-latakias": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "aromatik-harmanlar": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "balkan-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "bugunun-pipo-tutunu-piyasasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "burley": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "cavendish": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "cubuk": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "çıbık",
+      "İmame"
+     ]
+    },
+    "dunhill-tutun-harmanlari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "eski-ticaret-basininda-pipo-ve-tutun-olgular-ve-efsaneler": {
+     "nedenler": [
+      "sizinti",
+      "tavsiye"
+     ],
+     "sizinti": [
+      "Kalabaş"
+     ],
+     "tavsiye": 1
+    },
+    "eskisehir-lule-tasi-oymaciligi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "tandırlama"
+     ]
+    },
+    "esoterica-tobacciana": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "g-l-pease": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "good-bye-cigarettes-hello-pipe-sigaradan-pipoya-gecis": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "ingiliz-harmani": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti",
+      "tavsiye"
+     ],
+     "sizinti": [
+      "salaş",
+      "ızgara"
+     ],
+     "tavsiye": 1
+    },
+    "lane-limited": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "mcclelland-tobacco-company": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "osmanlida-cubuk-kulturu": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Sarayı"
+     ]
+    },
+    "pipo-doldurma-ve-icim-tekniklerinin-kaynaklari": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-haznesi-olcusu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-icicilerinin-hicivli-portreleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-koleksiyonculugu-merak-mi-meslek-mi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "pipo-sozcugunun-kokeni": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "pipo"
+     ]
+    },
+    "pipo-tutunu": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "pres-tutunler-ve-flake-piposu-kavrami": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "seasmoke-pipes": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "sot-weed-ve-little-ladell-unutulmus-iki-tutun-terimi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "sutliff-tobacco": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tobacconist-university": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 2
+    },
+    "turkiyede-pipo-topluluklari-ve-kaynaklar": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Osmanlı"
+     ]
+    },
+    "tutun-kesimleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 3
+    },
+    "tutun-kurleme-yontemleri": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "tutunun-yillandirilmasi": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    },
+    "ulkesi-belirsiz-markalar-pipo-markalari-dizini-1": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "hurması"
+     ]
+    },
+    "virginia": {
+     "nedenler": [
+      "tavsiye"
+     ],
+     "tavsiye": 1
+    }
+   }
+  },
+  "ja": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0065,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 8,
+    "kapsamEksik": 0,
+    "sizintiMadde": 8,
+    "baslikOzetTurkceHarf": 7,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 0,
+    "tavsiyeBilgi": 0,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 5
+   },
+   "duzeltilecekMaddeler": [
+    "altinok",
+    "balleby-pipes",
+    "erdogan-ege",
+    "izmir-tutunu",
+    "lule-tasi",
+    "pipo-sozcugunun-kokeni",
+    "pipo-terimleri-sozlugu",
+    "pipsan-pipolari"
+   ],
+   "maddeler": {
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "balleby-pipes": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "nın"
+     ]
+    },
+    "erdogan-ege": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ı"
+     ]
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "ızgara"
+     ]
+    },
+    "lule-tasi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "lüleciliği"
+     ]
+    },
+    "pipo-sozcugunun-kokeni": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "pipo"
+     ]
+    },
+    "pipo-terimleri-sozlugu": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "dumansız",
+      "sıcak"
+     ]
+    },
+    "pipsan-pipolari": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Pipoları"
+     ]
+    }
+   }
+  },
+  "zh": {
+   "acik": true,
+   "duzeltilecek": false,
+   "nedenliOran": 0.0186,
+   "baglantiOrani": 0,
+   "sayilar": {
+    "madde": 1236,
+    "nedenli": 23,
+    "kapsamEksik": 0,
+    "sizintiMadde": 23,
+    "baslikOzetTurkceHarf": 18,
+    "bosBlok": 0,
+    "satici": 0,
+    "tavsiyeTutun": 0,
+    "tavsiyeBilgi": 0,
+    "baglanti": 0,
+    "baglantiHedefsiz": 0,
+    "kisaOzet": 211
+   },
+   "duzeltilecekMaddeler": [
+    "abd-pipo-markalari-dizini-3",
+    "ak-tas-meerschaum",
+    "altinok",
+    "bacchiega",
+    "bari",
+    "barling",
+    "bay-pipe",
+    "clubb-torontodan-los-angelesa-bir-tutuncu-adi",
+    "codger-harmanlari",
+    "cubuk",
+    "emin",
+    "faders",
+    "garfinkel-washingtonin-pipo-ve-tutun-dukkani",
+    "izmir-tutunu",
+    "jud",
+    "meissen-porcelain",
+    "midas-meerschaum",
+    "morel",
+    "peterson-house-pipe-bir-asiri-boy-gelenegi",
+    "pipo-malzemeleri-ve-yapisi",
+    "pipo-sozcugunun-kokeni",
+    "stanwell-sekil-numaralari-ve-tasarimcilari",
+    "tutun-kurleme-yontemleri"
+   ],
+   "maddeler": {
+    "abd-pipo-markalari-dizini-3": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "kalabaş"
+     ]
+    },
+    "ak-tas-meerschaum": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Sanatları",
+      "Çarşısı"
+     ]
+    },
+    "altinok": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "kalabaş",
+      "ı"
+     ]
+    },
+    "bacchiega": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "yapımcı"
+     ]
+    },
+    "bari": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "kumlanmış"
+     ]
+    },
+    "barling": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Adası",
+      "ağaç"
+     ]
+    },
+    "bay-pipe": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Lületaşı",
+      "Sanatları"
+     ]
+    },
+    "clubb-torontodan-los-angelesa-bir-tutuncu-adi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "basılı"
+     ]
+    },
+    "codger-harmanlari": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "harmanları"
+     ]
+    },
+    "cubuk": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "çıbık",
+      "İmame"
+     ]
+    },
+    "emin": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "kalabaş"
+     ]
+    },
+    "faders": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Sokağı"
+     ]
+    },
+    "garfinkel-washingtonin-pipo-ve-tutun-dukkani": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "tütünü",
+      "Şark"
+     ]
+    },
+    "izmir-tutunu": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "salaş",
+      "ızgara"
+     ]
+    },
+    "jud": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "tütün"
+     ]
+    },
+    "meissen-porcelain": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Ağustos"
+     ]
+    },
+    "midas-meerschaum": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "kalabaş"
+     ]
+    },
+    "morel": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Irmağı"
+     ]
+    },
+    "peterson-house-pipe-bir-asiri-boy-gelenegi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Yapımı"
+     ]
+    },
+    "pipo-malzemeleri-ve-yapisi": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "kalabaş"
+     ]
+    },
+    "pipo-sozcugunun-kokeni": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "pipo"
+     ]
+    },
+    "stanwell-sekil-numaralari-ve-tasarimcilari": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Yılın"
+     ]
+    },
+    "tutun-kurleme-yontemleri": {
+     "nedenler": [
+      "sizinti"
+     ],
+     "sizinti": [
+      "Şark"
+     ]
+    }
+   }
+  }
+ }
+}
