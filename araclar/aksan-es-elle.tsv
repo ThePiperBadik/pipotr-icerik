@@ -1,0 +1,64 @@
+# es: elle eklenen aksan düzeltmeleri (aksansız<TAB>doğru). aksan.mjs --oner --yaz bu dosyayı ezmez. Tur 12, 21 Ekim 2026; DI #15 P2.
+# 1) -ción/-sión adları: aksansız -cion/-sion biçimi İspanyolcada sözcük değildir. Veride İngilizce ad olarak geçenler GİRMEZ:
+#    mission, mansion, passion, persuasion, excursion, invasion, obsession (Mission Briar, Mansion House, Balkan Passion… harman/marka adları).
+# 2) İki sözcüklü kalıplar: "esta" + ortaç fiil (está documentado…) ve "esta perdida" (ad: esta pérdida). Her geçiş tek tek okundu;
+#    "Esta cuenta con", "Esta falta de", "Esta modesta/rápida/elevada/alta" (gösterme sıfatı) bilerek girmez.
+aceleracion	aceleración
+acentuacion	acentuación
+actualizacion	actualización
+acunacion	acuñación
+aparicion	aparición
+asignacion	asignación
+desorientacion	desorientación
+determinacion	determinación
+diferenciacion	diferenciación
+digitalizacion	digitalización
+diversion	diversión
+divulgacion	divulgación
+ebullicion	ebullición
+ejecucion	ejecución
+elevacion	elevación
+exageracion	exageración
+extincion	extinción
+globalizacion	globalización
+gradacion	gradación
+implantacion	implantación
+inclusion	inclusión
+licitacion	licitación
+modificacion	modificación
+motivacion	motivación
+negacion	negación
+observacion	observación
+oracion	oración
+oxidacion	oxidación
+peritacion	peritación
+precaucion	precaución
+proclamacion	proclamación
+recepcion	recepción
+regresion	regresión
+rehumectacion	rehumectación
+relajacion	relajación
+remarcacion	remarcación
+repercusion	repercusión
+suspension	suspensión
+traccion	tracción
+esta ajustado	está ajustado
+esta cerrada	está cerrada
+esta compuesto	está compuesto
+esta curvada	está curvada
+esta documentado	está documentado
+esta encabezada	está encabezada
+esta establecido	está establecido
+esta fabricado	está fabricado
+esta inscrito	está inscrito
+esta jubilado	está jubilado
+esta perdida	esta pérdida
+esta protegida	está protegida
+esta recluido	está recluido
+esta reconocido	está reconocido
+esta recopilada	está recopilada
+esta relacionada	está relacionada
+esta repartida	está repartida
+esta representada	está representada
+esta respaldada	está respaldada
+esta tallado	está tallado

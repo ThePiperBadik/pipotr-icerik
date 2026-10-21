@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // Aksansız sözcük düzeltmesi ve ölçümü, fr ve es (ThePiperBadik/ipc#525 kalanı; tur 11). Bağımlılıksız Node (>= 20).
 //
-// Liste: araclar/aksan-<dil>.tsv, satır başına "aksansız<TAB>doğru" (küçük harf). Listedeki aksansız biçim o dilde geçerli bir
-// sözcük DEĞİLDİR (kesin hata); bağlama göre değişen çiftler (fr a/à, ou/où, -e/-é fiil biçimleri; es mas/más, el/él,
+// Liste: araclar/aksan-<dil>.tsv (+ elle eklenenler aksan-<dil>-elle.tsv, iki sözcüklü kalıp dahil), satır başına
+// "aksansız<TAB>doğru" (küçük harf). Listedeki aksansız biçim o dilde geçerli bir
+// sözcük DEĞİLDİR (kesin hata); bağlama göre değişen çiftler (fr a/à, ou/où, -e/-é fiil biçimleri; es el/él,
 // esta/está, fabrica/fábrica, publico/público/publicó) listeye girmez, metinde olduğu gibi kalır. Anlam değişmez: yalnız
 // aksan işareti eklenir, sözcük sırası ve başka harf değişmez (betik her metinde aksanları sildiğinde eski ve yeni metnin
 // aynı kaldığını denetler, fark varsa durur).
@@ -47,18 +48,36 @@ const ELLE_HARIC = {
 const FIIL_ITE = /^(cit|invit|habit|imit|limit|visit|irrit|excit|incit|profit|edit|merit|felicit|hesit|recit|evit|sollicit|debit|herit|abrit|quitt|precipit|facilit|deshabit|transit|deposit|explicit|delimit|gravit|lévit|levit|trait|effrit|lit|ecrit|produit|reduit|construit|conduit|induit)es?$/;
 const sil = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC');
 
+// Liste iki dosyadan okunur: aksan-<dil>.tsv (--oner --yaz üretir) ve aksan-<dil>-elle.tsv (elle; --yaz ezmez). Elle dosyada
+// iki sözcüklü kalıp da olabilir ("esta documentado<TAB>está documentado"): bağlama göre değişen çift (esta/está, perdida/
+// pérdida) yalnız o kalıpta düzelir; kalıbın her geçişi aynı anlamdadır (DI #15 P2, tur 12; geçişler tek tek okundu).
 export function listeOku(dil) {
-  const p = path.join(KOK, 'araclar', `aksan-${dil}.tsv`);
   const m = new Map();
-  if (!fs.existsSync(p)) return m;
-  for (const satir of fs.readFileSync(p, 'utf8').split(/\r?\n/)) {
-    const t = satir.trim();
-    if (!t || t.startsWith('#')) continue;
-    const [a, d] = t.split('\t');
-    if (!a || !d || sil(d) !== a) throw new Error(`[aksan] aksan-${dil}.tsv bozuk satır: ${t}`);
-    m.set(a, d);
+  const kalip = new Map();
+  for (const ad of [`aksan-${dil}.tsv`, `aksan-${dil}-elle.tsv`]) {
+    const p = path.join(KOK, 'araclar', ad);
+    if (!fs.existsSync(p)) continue;
+    for (const satir of fs.readFileSync(p, 'utf8').split(/\r?\n/)) {
+      const t = satir.trim();
+      if (!t || t.startsWith('#')) continue;
+      const [a, d] = t.split('\t');
+      if (!a || !d || sil(d) !== a || a.split(' ').length !== d.split(' ').length) throw new Error(`[aksan] ${ad} bozuk satır: ${t}`);
+      (a.includes(' ') ? kalip : m).set(a, d);
+    }
   }
+  const kac = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  m.kalip = kalip;
+  m.kalipRe = kalip.size
+    ? new RegExp(`(?<!\\p{L})(?:${[...kalip.keys()].map((k) => k.split(' ').map(kac).join('\\s+')).join('|')})(?!\\p{L})`, 'giu')
+    : null;
   return m;
+}
+
+/** Kalıp eşleşmesini düzeltir: sözcük sözcük, büyük harf ve aradaki boşluk korunur */
+function kalipDuzelt(eslesme, liste) {
+  const dogru = liste.kalip.get(eslesme.toLowerCase().replace(/\s+/g, ' ')).split(' ');
+  let i = 0;
+  return eslesme.replace(SOZCUK, (w) => buyukHarfle(w, dogru[i++]));
 }
 
 /** Dosyadaki her metin değerini gezer; degistir verilirse yeni değeri yazar */
@@ -82,7 +101,13 @@ export function duzelt(metin, liste, say) {
     .map((parca, i) =>
       i % 2 === 1
         ? parca
-        : parca.replace(SOZCUK, (w) => {
+        : (liste.kalipRe
+            ? parca.replace(liste.kalipRe, (k) => {
+                if (say) say.n++;
+                return kalipDuzelt(k, liste);
+              })
+            : parca
+          ).replace(SOZCUK, (w) => {
             const d = liste.get(w.toLowerCase());
             if (!d) return w;
             if (say) say.n++;
@@ -102,7 +127,9 @@ export function aksanOlc(dil, liste = listeOku(dil)) {
     const tur = f === 'harmanlar.json' ? 'harman' : f.startsWith('icerik-') ? 'madde' : null;
     gez(oku(path.join(KLASOR, dil, f)), '', (s, k) => {
       let hata = 0;
-      for (const w of s.split(KORUMA).filter((_, i) => i % 2 === 0).join(' ').match(SOZCUK) ?? []) if (liste.has(w.toLowerCase())) hata++;
+      const acik = s.split(KORUMA).filter((_, i) => i % 2 === 0).join(' ');
+      for (const w of acik.match(SOZCUK) ?? []) if (liste.has(w.toLowerCase())) hata++;
+      if (liste.kalipRe) hata += (acik.match(liste.kalipRe) ?? []).length;
       say.kesinHata += hata;
       if (tur && (tur === 'madde' ? k === 'x' : k === 'z') && s.length >= UZUN) {
         say[tur].uzun++;
