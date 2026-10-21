@@ -247,7 +247,7 @@ if (arg[0] === 'ozel-adlar') {
   for (const [d, o] of Object.entries(sonuc.ozet)) console.log(`[kalite] ${d}: ${o}`);
   if (arg.includes('--denetle')) {
     const eski = fs.existsSync(hedef) ? fs.readFileSync(hedef, 'utf8') : '';
-    if (eski !== metin) { console.error(`[kalite] ${surum}/kalite.json güncel değil: IPC_DIR=../ipc node araclar/kalite.mjs`); process.exit(1); }
+    if (eski.replace(/\r\n/g, '\n') !== metin) { console.error(`[kalite] ${surum}/kalite.json güncel değil: IPC_DIR=../ipc node araclar/kalite.mjs`); process.exit(1); }
     console.log(`[kalite] ${surum}/kalite.json güncel`);
   } else {
     fs.writeFileSync(hedef, metin);

@@ -23,15 +23,15 @@
  },
  "ozet": {
   "tr": "32/1236 nedenli (%2.6) · sızıntı 0 · başlık/özet TR harf 0 · satıcı 0 · tavsiye (tütün) 48 · bağlantı 6281 (%100) · kısa özet 781",
-  "en": "43/1236 nedenli (%3.5) · sızıntı 9 · başlık/özet TR harf 37 · satıcı 0 · tavsiye (tütün) 52 · bağlantı 0 (%0) · kısa özet 279",
-  "de": "35/1236 nedenli (%2.8) · sızıntı 7 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 0 (%0) · kısa özet 440",
-  "fr": "50/1236 nedenli (%4.0) · sızıntı 10 · başlık/özet TR harf 26 · satıcı 0 · tavsiye (tütün) 66 · bağlantı 0 (%0) · kısa özet 111",
-  "es": "39/1236 nedenli (%3.2) · sızıntı 4 · başlık/özet TR harf 30 · satıcı 0 · tavsiye (tütün) 67 · bağlantı 0 (%0) · kısa özet 122",
-  "nl": "32/1236 nedenli (%2.6) · sızıntı 6 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 49 · bağlantı 0 (%0) · kısa özet 310",
-  "sv": "42/1236 nedenli (%3.4) · sızıntı 11 · başlık/özet TR harf 40 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 0 (%0) · kısa özet 535",
-  "da": "38/1236 nedenli (%3.1) · sızıntı 9 · başlık/özet TR harf 35 · satıcı 0 · tavsiye (tütün) 44 · bağlantı 0 (%0) · kısa özet 454",
-  "ja": "8/1236 nedenli (%0.6) · sızıntı 8 · başlık/özet TR harf 7 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 0 (%0) · kısa özet 5",
-  "zh": "23/1236 nedenli (%1.9) · sızıntı 23 · başlık/özet TR harf 18 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 0 (%0) · kısa özet 211"
+  "en": "43/1236 nedenli (%3.5) · sızıntı 9 · başlık/özet TR harf 37 · satıcı 0 · tavsiye (tütün) 52 · bağlantı 4887 (%78) · kısa özet 279",
+  "de": "35/1236 nedenli (%2.8) · sızıntı 7 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 4324 (%69) · kısa özet 440",
+  "fr": "50/1236 nedenli (%4.0) · sızıntı 10 · başlık/özet TR harf 26 · satıcı 0 · tavsiye (tütün) 66 · bağlantı 4123 (%66) · kısa özet 111",
+  "es": "39/1236 nedenli (%3.2) · sızıntı 4 · başlık/özet TR harf 30 · satıcı 0 · tavsiye (tütün) 67 · bağlantı 4478 (%71) · kısa özet 122",
+  "nl": "32/1236 nedenli (%2.6) · sızıntı 6 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 49 · bağlantı 4422 (%70) · kısa özet 310",
+  "sv": "42/1236 nedenli (%3.4) · sızıntı 11 · başlık/özet TR harf 40 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 4512 (%72) · kısa özet 535",
+  "da": "38/1236 nedenli (%3.1) · sızıntı 9 · başlık/özet TR harf 35 · satıcı 0 · tavsiye (tütün) 44 · bağlantı 4574 (%73) · kısa özet 454",
+  "ja": "8/1236 nedenli (%0.6) · sızıntı 8 · başlık/özet TR harf 7 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 3175 (%51) · kısa özet 5",
+  "zh": "23/1236 nedenli (%1.9) · sızıntı 23 · başlık/özet TR harf 18 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 1938 (%31) · kısa özet 211"
  },
  "diller": {
   "tr": {
@@ -50,7 +50,7 @@
     "tavsiyeTutun": 48,
     "tavsiyeBilgi": 583,
     "baglanti": 6281,
-    "baglantiHedefsiz": 1055,
+    "baglantiHedefsiz": 0,
     "kisaOzet": 781
    },
    "duzeltilecekMaddeler": [
@@ -164,8 +164,7 @@
      "nedenler": [
       "tavsiye"
      ],
-     "tavsiye": 2,
-     "baglantiHedefsiz": 1
+     "tavsiye": 2
     },
     "lane-limited": {
      "nedenler": [
@@ -225,8 +224,7 @@
      "nedenler": [
       "tavsiye"
      ],
-     "tavsiye": 1,
-     "baglantiHedefsiz": 1
+     "tavsiye": 1
     },
     "pipo-ve-tutun-uzmanligi-kim-uzman-sayilir": {
      "nedenler": [
@@ -238,15 +236,13 @@
      "nedenler": [
       "tavsiye"
      ],
-     "tavsiye": 1,
-     "baglantiHedefsiz": 1
+     "tavsiye": 1
     },
     "seasmoke-pipes": {
      "nedenler": [
       "tavsiye"
      ],
-     "tavsiye": 2,
-     "baglantiHedefsiz": 2
+     "tavsiye": 2
     },
     "sigara-paketi-kartlari-ve-pipo-konulu-diziler": {
      "nedenler": [
@@ -290,7 +286,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0348,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.7781,
    "sayilar": {
     "madde": 1236,
     "nedenli": 43,
@@ -301,7 +297,7 @@
     "satici": 0,
     "tavsiyeTutun": 52,
     "tavsiyeBilgi": 617,
-    "baglanti": 0,
+    "baglanti": 4887,
     "baglantiHedefsiz": 0,
     "kisaOzet": 279
    },
@@ -641,7 +637,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0283,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.6884,
    "sayilar": {
     "madde": 1236,
     "nedenli": 35,
@@ -652,7 +648,7 @@
     "satici": 0,
     "tavsiyeTutun": 45,
     "tavsiyeBilgi": 463,
-    "baglanti": 0,
+    "baglanti": 4324,
     "baglantiHedefsiz": 0,
     "kisaOzet": 440
    },
@@ -929,7 +925,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0405,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.6564,
    "sayilar": {
     "madde": 1236,
     "nedenli": 50,
@@ -940,7 +936,7 @@
     "satici": 0,
     "tavsiyeTutun": 66,
     "tavsiyeBilgi": 667,
-    "baglanti": 0,
+    "baglanti": 4123,
     "baglantiHedefsiz": 0,
     "kisaOzet": 111
    },
@@ -1324,7 +1320,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0316,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.7129,
    "sayilar": {
     "madde": 1236,
     "nedenli": 39,
@@ -1335,7 +1331,7 @@
     "satici": 0,
     "tavsiyeTutun": 67,
     "tavsiyeBilgi": 724,
-    "baglanti": 0,
+    "baglanti": 4478,
     "baglantiHedefsiz": 0,
     "kisaOzet": 122
    },
@@ -1632,7 +1628,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0259,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.704,
    "sayilar": {
     "madde": 1236,
     "nedenli": 32,
@@ -1643,7 +1639,7 @@
     "satici": 0,
     "tavsiyeTutun": 49,
     "tavsiyeBilgi": 632,
-    "baglanti": 0,
+    "baglanti": 4422,
     "baglantiHedefsiz": 0,
     "kisaOzet": 310
    },
@@ -1898,7 +1894,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.034,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.7184,
    "sayilar": {
     "madde": 1236,
     "nedenli": 42,
@@ -1909,7 +1905,7 @@
     "satici": 0,
     "tavsiyeTutun": 45,
     "tavsiyeBilgi": 464,
-    "baglanti": 0,
+    "baglanti": 4512,
     "baglantiHedefsiz": 0,
     "kisaOzet": 535
    },
@@ -2245,7 +2241,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0307,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.7282,
    "sayilar": {
     "madde": 1236,
     "nedenli": 38,
@@ -2256,7 +2252,7 @@
     "satici": 0,
     "tavsiyeTutun": 44,
     "tavsiyeBilgi": 497,
-    "baglanti": 0,
+    "baglanti": 4574,
     "baglantiHedefsiz": 0,
     "kisaOzet": 454
    },
@@ -2559,7 +2555,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0065,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.5055,
    "sayilar": {
     "madde": 1236,
     "nedenli": 8,
@@ -2570,7 +2566,7 @@
     "satici": 0,
     "tavsiyeTutun": 0,
     "tavsiyeBilgi": 0,
-    "baglanti": 0,
+    "baglanti": 3175,
     "baglantiHedefsiz": 0,
     "kisaOzet": 5
    },
@@ -2656,7 +2652,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0186,
-   "baglantiOrani": 0,
+   "baglantiOrani": 0.3085,
    "sayilar": {
     "madde": 1236,
     "nedenli": 23,
@@ -2667,7 +2663,7 @@
     "satici": 0,
     "tavsiyeTutun": 0,
     "tavsiyeBilgi": 0,
-    "baglanti": 0,
+    "baglanti": 1938,
     "baglantiHedefsiz": 0,
     "kisaOzet": 211
    },
