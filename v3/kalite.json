@@ -21,17 +21,22 @@
   "ozelAdlar": 73,
   "turkceSozcukler": 25
  },
+ "atif": {
+  "dosya": true,
+  "pipediaKaynakli": 1181,
+  "lisansli": 1181
+ },
  "ozet": {
-  "tr": "32/1236 nedenli (%2.6) · sızıntı 0 · başlık/özet TR harf 0 · satıcı 0 · tavsiye (tütün) 48 · bağlantı 6281 (%100) · kısa özet 781",
-  "en": "43/1236 nedenli (%3.5) · sızıntı 9 · başlık/özet TR harf 37 · satıcı 0 · tavsiye (tütün) 52 · bağlantı 4887 (%78) · kısa özet 279",
-  "de": "35/1236 nedenli (%2.8) · sızıntı 7 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 4324 (%69) · kısa özet 440",
-  "fr": "50/1236 nedenli (%4.0) · sızıntı 10 · başlık/özet TR harf 26 · satıcı 0 · tavsiye (tütün) 66 · bağlantı 4123 (%66) · kısa özet 111",
-  "es": "39/1236 nedenli (%3.2) · sızıntı 4 · başlık/özet TR harf 30 · satıcı 0 · tavsiye (tütün) 67 · bağlantı 4478 (%71) · kısa özet 122",
-  "nl": "32/1236 nedenli (%2.6) · sızıntı 6 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 49 · bağlantı 4422 (%70) · kısa özet 310",
-  "sv": "42/1236 nedenli (%3.4) · sızıntı 11 · başlık/özet TR harf 40 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 4512 (%72) · kısa özet 535",
-  "da": "38/1236 nedenli (%3.1) · sızıntı 9 · başlık/özet TR harf 35 · satıcı 0 · tavsiye (tütün) 44 · bağlantı 4574 (%73) · kısa özet 454",
-  "ja": "8/1236 nedenli (%0.6) · sızıntı 8 · başlık/özet TR harf 7 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 3175 (%51) · kısa özet 5",
-  "zh": "23/1236 nedenli (%1.9) · sızıntı 23 · başlık/özet TR harf 18 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 1938 (%31) · kısa özet 211"
+  "tr": "32/1236 nedenli (%2.6) · sızıntı 0 · başlık/özet TR harf 0 · satıcı 0 · tavsiye (tütün) 48 · bağlantı 6281 (%100) · kısa özet 781 · yazar 1236 · tarih 1236",
+  "en": "43/1236 nedenli (%3.5) · sızıntı 9 · başlık/özet TR harf 37 · satıcı 0 · tavsiye (tütün) 52 · bağlantı 4887 (%78) · kısa özet 279 · yazar 1236 · tarih 1236",
+  "de": "35/1236 nedenli (%2.8) · sızıntı 7 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 4324 (%69) · kısa özet 440 · yazar 1236 · tarih 1236",
+  "fr": "50/1236 nedenli (%4.0) · sızıntı 10 · başlık/özet TR harf 26 · satıcı 0 · tavsiye (tütün) 66 · bağlantı 4123 (%66) · kısa özet 111 · yazar 1236 · tarih 1236",
+  "es": "39/1236 nedenli (%3.2) · sızıntı 4 · başlık/özet TR harf 30 · satıcı 0 · tavsiye (tütün) 67 · bağlantı 4478 (%71) · kısa özet 122 · yazar 1236 · tarih 1236",
+  "nl": "32/1236 nedenli (%2.6) · sızıntı 6 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 49 · bağlantı 4422 (%70) · kısa özet 310 · yazar 1236 · tarih 1236",
+  "sv": "42/1236 nedenli (%3.4) · sızıntı 11 · başlık/özet TR harf 40 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 4512 (%72) · kısa özet 535 · yazar 1236 · tarih 1236",
+  "da": "38/1236 nedenli (%3.1) · sızıntı 9 · başlık/özet TR harf 35 · satıcı 0 · tavsiye (tütün) 44 · bağlantı 4574 (%73) · kısa özet 454 · yazar 1236 · tarih 1236",
+  "ja": "8/1236 nedenli (%0.6) · sızıntı 8 · başlık/özet TR harf 7 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 3175 (%51) · kısa özet 5 · yazar 1236 · tarih 1236",
+  "zh": "23/1236 nedenli (%1.9) · sızıntı 23 · başlık/özet TR harf 18 · satıcı 0 · tavsiye (tütün) 0 · bağlantı 1938 (%31) · kısa özet 211 · yazar 1236 · tarih 1236"
  },
  "diller": {
   "tr": {
@@ -40,6 +45,8 @@
    "nedenliOran": 0.0259,
    "baglantiOrani": 1,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 32,
     "kapsamEksik": 0,
@@ -288,6 +295,8 @@
    "nedenliOran": 0.0348,
    "baglantiOrani": 0.7781,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 43,
     "kapsamEksik": 0,
@@ -639,6 +648,8 @@
    "nedenliOran": 0.0283,
    "baglantiOrani": 0.6884,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 35,
     "kapsamEksik": 0,
@@ -927,6 +938,8 @@
    "nedenliOran": 0.0405,
    "baglantiOrani": 0.6564,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 50,
     "kapsamEksik": 0,
@@ -1322,6 +1335,8 @@
    "nedenliOran": 0.0316,
    "baglantiOrani": 0.7129,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 39,
     "kapsamEksik": 0,
@@ -1630,6 +1645,8 @@
    "nedenliOran": 0.0259,
    "baglantiOrani": 0.704,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 32,
     "kapsamEksik": 0,
@@ -1896,6 +1913,8 @@
    "nedenliOran": 0.034,
    "baglantiOrani": 0.7184,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 42,
     "kapsamEksik": 0,
@@ -2243,6 +2262,8 @@
    "nedenliOran": 0.0307,
    "baglantiOrani": 0.7282,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 38,
     "kapsamEksik": 0,
@@ -2557,6 +2578,8 @@
    "nedenliOran": 0.0065,
    "baglantiOrani": 0.5055,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 8,
     "kapsamEksik": 0,
@@ -2654,6 +2677,8 @@
    "nedenliOran": 0.0186,
    "baglantiOrani": 0.3085,
    "sayilar": {
+    "atifYazar": 1236,
+    "atifGuncelleme": 1236,
     "madde": 1236,
     "nedenli": 23,
     "kapsamEksik": 0,

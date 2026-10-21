@@ -126,17 +126,21 @@ export function olc({ guard, notr, hosts, iz }) {
   for (const s of sluglar) { let n = 0; for (const b of tr.get(s).bloklar ?? []) blokBaglantilari(b, (l) => { if (l.startsWith('m:')) n++; }); trBaglanti.set(s, n); }
   const trToplamBaglanti = [...trBaglanti.values()].reduce((a, b) => a + b, 0);
 
+  const atifYolu = path.join(KLASOR, 'atif.json');
+  const atif = fs.existsSync(atifYolu) ? oku(atifYolu) : null;
+  const pipediaKaynakli = sluglar.filter((s) => (tr.get(s).kaynak ?? []).some((k) => /pipedia/i.test(String(k)))).length;
   const sonuc = {
     surum,
     aciklama: 'U-D1 dil kalitesi (sahip kararı 71): noindex YOK; nedenli maddeler dilin "duzeltilecekMaddeler" listesinde, nedenli madde oranı %5\'i aşan dil "duzeltilecek: true". Üreten: araclar/kalite.mjs.',
     kurallar: { esikDil: ESIK_DIL, kisaOzetSozcuk: KISA_OZET, nedenler: ['kapsam-baslik', 'kapsam-ozet', 'kapsam-govde', 'sizinti', 'bos-blok', 'satici', 'tavsiye'], ipcKurallari: iz, ozelAdlar: ozelAdlar.length, turkceSozcukler: trSozcuk.size },
+    atif: { dosya: !!atif, pipediaKaynakli, lisansli: atif ? sluglar.filter((s) => atif.maddeler?.[s]?.lisans && (tr.get(s).kaynak ?? []).some((k) => /pipedia/i.test(String(k)))).length : 0 },
     ozet: {},
     diller: {},
   };
 
   for (const dil of DILLER) {
     const veri = dil === 'tr' ? tr : dilVerisi(dil);
-    const say = { madde: 0, nedenli: 0, kapsamEksik: 0, sizintiMadde: 0, baslikOzetTurkceHarf: 0, bosBlok: 0, satici: 0, tavsiyeTutun: 0, tavsiyeBilgi: 0, baglanti: 0, baglantiHedefsiz: 0, kisaOzet: 0 };
+    const say = { atifYazar: 0, atifGuncelleme: 0, madde: 0, nedenli: 0, kapsamEksik: 0, sizintiMadde: 0, baslikOzetTurkceHarf: 0, bosBlok: 0, satici: 0, tavsiyeTutun: 0, tavsiyeBilgi: 0, baglanti: 0, baglantiHedefsiz: 0, kisaOzet: 0 };
     const maddeler = {};
     const duzeltilecek = [];
     for (const s of sluglar) {
@@ -197,6 +201,10 @@ export function olc({ guard, notr, hosts, iz }) {
 
       if (sozcukSayisi(m.z, dil) < KISA_OZET) say.kisaOzet++;
 
+      // U-D3 atıf alanları (bilgi): <surum>/atif.json
+      if (atif?.maddeler?.[s]?.yazar) say.atifYazar++;
+      if (atif?.maddeler?.[s]?.guncelleme?.[dil]) say.atifGuncelleme++;
+
       if (nedenler.length) {
         say.nedenli++;
         duzeltilecek.push(s);
@@ -213,7 +221,7 @@ export function olc({ guard, notr, hosts, iz }) {
       duzeltilecekMaddeler: duzeltilecek,
       maddeler,
     };
-    sonuc.ozet[dil] = `${say.nedenli}/${say.madde} nedenli (%${(oran * 100).toFixed(1)})${oran > ESIK_DIL ? ' → düzeltilecek' : ''} · sızıntı ${say.sizintiMadde} · başlık/özet TR harf ${say.baslikOzetTurkceHarf} · satıcı ${say.satici} · tavsiye (tütün) ${say.tavsiyeTutun} · bağlantı ${say.baglanti} (%${((say.baglanti / (trToplamBaglanti || 1)) * 100).toFixed(0)}) · kısa özet ${say.kisaOzet}`;
+    sonuc.ozet[dil] = `${say.nedenli}/${say.madde} nedenli (%${(oran * 100).toFixed(1)})${oran > ESIK_DIL ? ' → düzeltilecek' : ''} · sızıntı ${say.sizintiMadde} · başlık/özet TR harf ${say.baslikOzetTurkceHarf} · satıcı ${say.satici} · tavsiye (tütün) ${say.tavsiyeTutun} · bağlantı ${say.baglanti} (%${((say.baglanti / (trToplamBaglanti || 1)) * 100).toFixed(0)}) · kısa özet ${say.kisaOzet} · yazar ${say.atifYazar} · tarih ${say.atifGuncelleme}`;
   }
   return sonuc;
 }
