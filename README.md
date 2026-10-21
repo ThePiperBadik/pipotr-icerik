@@ -3,6 +3,7 @@
 PipoTr mobil uygulamasının herkese açık içerik deposu.
 
 - `gizlilik.html`, `kosullar.html`, `destek.html` — 8 dilde yasal ve destek sayfaları (GitHub Pages)
+- `prs/gizlilik.html`, `prs/kosullar.html`, `prs/destek.html` — PRS – Pipe Rotation System yasal ve destek sayfaları, 8 dil (tr, en, de, fr, es, nl, sv, da). Elle düzenlenmez: metin `araclar/prs-yasal.mjs` içindedir, `node araclar/prs-yasal.mjs` üretir, `--denetle` güncel değilse 1 ile çıkar. Play Console gizlilik adresi `https://thepiperbadik.github.io/pipotr-icerik/prs/gizlilik.html`, hesap silme adresi `.../prs/destek.html`.
 - `manifest.json`, `v*/<dil>/*.json` — uygulamanın indirdiği dil paketleri (jsDelivr üzerinden)
 - `v3/<dil>/*.json` — tek paket sürümü (ThePiperBadik/ipc#840): satıcı sitelerine giden bağlantılar, satıcıyı anan kaynak satırları ve harman metinlerindeki tavsiye/övgü cümleleri çıkarılmış dil paketleri. Kurallar IPC deposundadır (`src/tools/ispe-hosts.txt` [satici], `ispe-neutral.mjs`); `pipotr-app` deposundaki `scripts/ispe_tarafsiz.mjs paket` ile üretilir, elle düzenlenmez. `v3/tr/*.json` Türkçe asıl veridir (uygulama bunu kendi içinde taşır; IPC eşitlemesi ve pipotr-site bu klasörü manifest sürümünden bulur).
 - `manifest.json` `surum` geçerli paket klasörünü gösterir. Uygulamalar (eski sürümler dahil) paketi bu klasörden indirir; önbellek anahtarı sürüm klasörü olduğu için eski önbellek kullanılmaz. **Paketi okuyan her şey klasör adını `manifest.json` `surum`'dan okur**, sabit `v2`/`v3` yazmaz.
