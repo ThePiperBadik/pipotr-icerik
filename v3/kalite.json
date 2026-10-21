@@ -30,8 +30,8 @@
   "tr": "32/1236 nedenli (%2.6) · sızıntı 0 · başlık/özet TR harf 0 · satıcı 0 · tavsiye (tütün) 48 · bağlantı 6281 (%100) · kısa özet 781 · yazar 1236 · tarih 1236",
   "en": "43/1236 nedenli (%3.5) · sızıntı 9 · başlık/özet TR harf 37 · satıcı 0 · tavsiye (tütün) 52 · bağlantı 4887 (%78) · kısa özet 279 · yazar 1236 · tarih 1236",
   "de": "35/1236 nedenli (%2.8) · sızıntı 7 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 4324 (%69) · kısa özet 440 · yazar 1236 · tarih 1236",
-  "fr": "50/1236 nedenli (%4.0) · sızıntı 10 · başlık/özet TR harf 26 · satıcı 0 · tavsiye (tütün) 66 · bağlantı 4123 (%66) · kısa özet 111 · yazar 1236 · tarih 1236",
-  "es": "39/1236 nedenli (%3.2) · sızıntı 4 · başlık/özet TR harf 30 · satıcı 0 · tavsiye (tütün) 67 · bağlantı 4478 (%71) · kısa özet 122 · yazar 1236 · tarih 1236",
+  "fr": "46/1236 nedenli (%3.7) · sızıntı 6 · başlık/özet TR harf 26 · satıcı 0 · tavsiye (tütün) 66 · bağlantı 4496 (%72) · kısa özet 111 · yazar 1236 · tarih 1236 · aksan: kesin hata 0, uzun aksansız harman %0.0 madde %0.2 (hatalı 0)",
+  "es": "39/1236 nedenli (%3.2) · sızıntı 4 · başlık/özet TR harf 30 · satıcı 0 · tavsiye (tütün) 67 · bağlantı 4570 (%73) · kısa özet 122 · yazar 1236 · tarih 1236 · aksan: kesin hata 0, uzun aksansız harman %5.8 madde %1.4 (hatalı 0)",
   "nl": "32/1236 nedenli (%2.6) · sızıntı 6 · başlık/özet TR harf 36 · satıcı 0 · tavsiye (tütün) 49 · bağlantı 4422 (%70) · kısa özet 310 · yazar 1236 · tarih 1236",
   "sv": "42/1236 nedenli (%3.4) · sızıntı 11 · başlık/özet TR harf 40 · satıcı 0 · tavsiye (tütün) 45 · bağlantı 4512 (%72) · kısa özet 535 · yazar 1236 · tarih 1236",
   "da": "38/1236 nedenli (%3.1) · sızıntı 9 · başlık/özet TR harf 35 · satıcı 0 · tavsiye (tütün) 44 · bağlantı 4574 (%73) · kısa özet 454 · yazar 1236 · tarih 1236",
@@ -935,21 +935,21 @@
   "fr": {
    "acik": true,
    "duzeltilecek": false,
-   "nedenliOran": 0.0405,
-   "baglantiOrani": 0.6564,
+   "nedenliOran": 0.0372,
+   "baglantiOrani": 0.7158,
    "sayilar": {
     "atifYazar": 1236,
     "atifGuncelleme": 1236,
     "madde": 1236,
-    "nedenli": 50,
+    "nedenli": 46,
     "kapsamEksik": 0,
-    "sizintiMadde": 10,
+    "sizintiMadde": 6,
     "baslikOzetTurkceHarf": 26,
     "bosBlok": 0,
     "satici": 0,
     "tavsiyeTutun": 66,
-    "tavsiyeBilgi": 667,
-    "baglanti": 4123,
+    "tavsiyeBilgi": 671,
+    "baglanti": 4496,
     "baglantiHedefsiz": 0,
     "kisaOzet": 111
    },
@@ -962,7 +962,6 @@
     "burley",
     "cavendish",
     "codger-harmanlari",
-    "constantinos-zissis",
     "cubuk",
     "dunhill-tutun-harmanlari",
     "eski-pipo-ve-tutun-kitaplarinin-yeniden-basimi",
@@ -993,10 +992,7 @@
     "samuel-gawith",
     "seasmoke-pipes",
     "sigara-paketi-kartlari-ve-pipo-konulu-diziler",
-    "siyahi",
     "sos-ve-aromalandirma",
-    "spanu",
-    "sven-knudsen",
     "tobacconist-university",
     "tutun-kesimleri",
     "tutun-kutusu-kavanozu-ve-tenekesi",
@@ -1005,6 +1001,23 @@
     "virginia-perique-harmani",
     "yenice-tutunu"
    ],
+   "aksan": {
+    "kesinHata": 0,
+    "harman": {
+     "uzun": 6998,
+     "aksansiz": 0,
+     "hatali": 0,
+     "oran": 0
+    },
+    "madde": {
+     "uzun": 10567,
+     "aksansiz": 22,
+     "hatali": 0,
+     "oran": 0.0021
+    },
+    "hedef": 0.03,
+    "gecti": true
+   },
    "maddeler": {
     "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
      "nedenler": [
@@ -1055,14 +1068,6 @@
       "tavsiye"
      ],
      "tavsiye": 3
-    },
-    "constantinos-zissis": {
-     "nedenler": [
-      "sizinti"
-     ],
-     "sizinti": [
-      "ile"
-     ]
     },
     "cubuk": {
      "nedenler": [
@@ -1255,35 +1260,11 @@
      ],
      "tavsiye": 1
     },
-    "siyahi": {
-     "nedenler": [
-      "sizinti"
-     ],
-     "sizinti": [
-      "ile"
-     ]
-    },
     "sos-ve-aromalandirma": {
      "nedenler": [
       "tavsiye"
      ],
      "tavsiye": 1
-    },
-    "spanu": {
-     "nedenler": [
-      "sizinti"
-     ],
-     "sizinti": [
-      "ile"
-     ]
-    },
-    "sven-knudsen": {
-     "nedenler": [
-      "sizinti"
-     ],
-     "sizinti": [
-      "ile"
-     ]
     },
     "tobacconist-university": {
      "nedenler": [
@@ -1333,7 +1314,7 @@
    "acik": true,
    "duzeltilecek": false,
    "nedenliOran": 0.0316,
-   "baglantiOrani": 0.7129,
+   "baglantiOrani": 0.7276,
    "sayilar": {
     "atifYazar": 1236,
     "atifGuncelleme": 1236,
@@ -1346,7 +1327,7 @@
     "satici": 0,
     "tavsiyeTutun": 67,
     "tavsiyeBilgi": 724,
-    "baglanti": 4478,
+    "baglanti": 4570,
     "baglantiHedefsiz": 0,
     "kisaOzet": 122
    },
@@ -1391,6 +1372,23 @@
     "tutunun-yillandirilmasi",
     "virginia"
    ],
+   "aksan": {
+    "kesinHata": 0,
+    "harman": {
+     "uzun": 7055,
+     "aksansiz": 412,
+     "hatali": 0,
+     "oran": 0.0584
+    },
+    "madde": {
+     "uzun": 10524,
+     "aksansiz": 147,
+     "hatali": 0,
+     "oran": 0.014
+    },
+    "hedef": 0.03,
+    "gecti": true
+   },
    "maddeler": {
     "19-yuzyil-pipo-harmanlari-tagsis-ve-tarif-kitaplari": {
      "nedenler": [
