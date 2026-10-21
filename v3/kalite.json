@@ -14,9 +14,9 @@
    "tavsiye"
   ],
   "ipcKurallari": {
-   "ispe-hosts.txt": "06db7f3bb708",
-   "ispe-neutral.mjs": "1a306af26448",
-   "ispe-guard.mjs": "1c54cf99401d"
+   "ispe-hosts.txt": "9bbc308eff49",
+   "ispe-neutral.mjs": "aa4911ccd8cf",
+   "ispe-guard.mjs": "736de7e564f2"
   },
   "ozelAdlar": 73,
   "turkceSozcukler": 25

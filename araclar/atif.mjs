@@ -95,9 +95,12 @@ function guncellemeler(dil, trTarih) {
 
 // ---- kaynak satırları
 const URL_RX = /https?:\/\/[^\s)]+/gi;
+const ADRESSIZ = /\bdadspipes\b/i;
 const BAS_ALAN = /^\s*([a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,})\b/i;
 function kaynakSatiri(metin) {
   const o = { metin };
+  // Sınıflaması IPC'de beklenen alan adları için adres yazılmaz, yalnız metin kalır (GD tur 8: "[satici]'ya taşınmalı" listesi; DI tur 10 P3)
+  if (ADRESSIZ.test(metin)) return o;
   const u = (metin.match(URL_RX) || [])[0];
   if (u) { if (guard.ispeUrl(hosts, u) === 'ok') o.url = u; return o; }
   const m = metin.match(BAS_ALAN);
@@ -111,7 +114,9 @@ function pipediaMaddesi(metin) {
   const m = metin.match(/^\s*Pipedia\s*[—–-]\s*(.+?)\s*$/i);
   if (!m) return null;
   let ad = m[1].replace(/\s*\([^()]*\)\s*$/, '').replace(/\s+(maddesi|maddeleri|bölümü|bahisleri|sayfası|kaydı|section)$/i, '').trim();
-  if (!ad || /\s(ve|and)\s/.test(ad) && /maddeleri/i.test(m[1])) return { ad: m[1].trim(), url: 'https://pipedia.org', dogrulanmadi: true };
+  // Ad Türkçe bir açıklamadan türemişse (Türkçe harf, "maddesi/maddeleri" ya da ";") Pipedia'da öyle bir sayfa yoktur:
+  // adres uydurulmaz, köke düşer (DI tur 10 P2, pipotr-icerik #13)
+  if (!ad || /\s(ve|and)\s/.test(ad) && /maddeleri/i.test(m[1]) || /[ğĞıİşŞ;]|madde(si|leri)/i.test(ad)) return { ad: m[1].trim(), url: 'https://pipedia.org', dogrulanmadi: true };
   return { ad, url: `https://pipedia.org/wiki/${encodeURIComponent(ad.replace(/ /g, '_')).replace(/%2F/g, '/')}`, dogrulanmadi: true };
 }
 

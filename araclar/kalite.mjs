@@ -107,7 +107,7 @@ async function kurallar() {
   const notr = await arac('ispe-neutral.mjs');
   const hosts = guard.ispeHosts();
   if (!hosts.vendors?.size) { console.error('[kalite] ispe-hosts.txt [satici] bölümü boş'); process.exit(2); }
-  const ozet = (f) => crypto.createHash('sha256').update(fs.readFileSync(path.join(ipc, 'src', 'tools', f))).digest('hex').slice(0, 12);
+  const ozet = (f) => crypto.createHash('sha256').update(fs.readFileSync(path.join(ipc, 'src', 'tools', f), 'utf8').replace(/\r\n/g, '\n')).digest('hex').slice(0, 12);
   return { guard, notr, hosts, iz: { 'ispe-hosts.txt': ozet('ispe-hosts.txt'), 'ispe-neutral.mjs': ozet('ispe-neutral.mjs'), 'ispe-guard.mjs': ozet('ispe-guard.mjs') } };
 }
 
