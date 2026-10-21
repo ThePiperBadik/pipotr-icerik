@@ -12,6 +12,7 @@
 //               cümleleri kalıba uyar; neden sayılmaz)
 //   baglanti    madde içi bağlantı (m:) sayısı, Türkçeye oranı ve hedefi olmayan bağlantı — bilgi, neden DEĞİL
 //   ozet        özet sözcük sayısı (25 altı sayılır) — bilgi
+//   aksan       (fr, es) aksansız kesin hata sözcüğü ve uzun aksansız metin oranı (araclar/aksan.mjs; ThePiperBadik/ipc#525) — bilgi
 //
 // Sonuç: v3/kalite.json (manifest "surum" klasörüne). Karar 71: hiçbir dil ve madde noindex OLMAZ; ölçüyü geçemeyen
 // madde dilin "duzeltilecek" listesine girer, bir dilde nedenli madde > %5 ise dil "duzeltilecek: true" olur.
@@ -25,6 +26,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { AKSAN_DILLERI, aksanOlc } from './aksan.mjs';
 
 const KOK = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DILLER = ['tr', 'en', 'de', 'fr', 'es', 'nl', 'sv', 'da', 'ja', 'zh'];
@@ -219,9 +221,10 @@ export function olc({ guard, notr, hosts, iz }) {
       baglantiOrani: trToplamBaglanti ? Math.round((say.baglanti / trToplamBaglanti) * 10000) / 10000 : 0,
       sayilar: say,
       duzeltilecekMaddeler: duzeltilecek,
+      ...(AKSAN_DILLERI.includes(dil) ? { aksan: aksanOlc(dil) } : {}),
       maddeler,
     };
-    sonuc.ozet[dil] = `${say.nedenli}/${say.madde} nedenli (%${(oran * 100).toFixed(1)})${oran > ESIK_DIL ? ' → düzeltilecek' : ''} · sızıntı ${say.sizintiMadde} · başlık/özet TR harf ${say.baslikOzetTurkceHarf} · satıcı ${say.satici} · tavsiye (tütün) ${say.tavsiyeTutun} · bağlantı ${say.baglanti} (%${((say.baglanti / (trToplamBaglanti || 1)) * 100).toFixed(0)}) · kısa özet ${say.kisaOzet} · yazar ${say.atifYazar} · tarih ${say.atifGuncelleme}`;
+    sonuc.ozet[dil] = `${say.nedenli}/${say.madde} nedenli (%${(oran * 100).toFixed(1)})${oran > ESIK_DIL ? ' → düzeltilecek' : ''} · sızıntı ${say.sizintiMadde} · başlık/özet TR harf ${say.baslikOzetTurkceHarf} · satıcı ${say.satici} · tavsiye (tütün) ${say.tavsiyeTutun} · bağlantı ${say.baglanti} (%${((say.baglanti / (trToplamBaglanti || 1)) * 100).toFixed(0)}) · kısa özet ${say.kisaOzet} · yazar ${say.atifYazar} · tarih ${say.atifGuncelleme}${sonuc.diller[dil].aksan ? ` · aksan: kesin hata ${sonuc.diller[dil].aksan.kesinHata}, uzun aksansız harman %${(sonuc.diller[dil].aksan.harman.oran * 100).toFixed(1)} madde %${(sonuc.diller[dil].aksan.madde.oran * 100).toFixed(1)} (hatalı ${sonuc.diller[dil].aksan.harman.hatali + sonuc.diller[dil].aksan.madde.hatali})` : ''}`;
   }
   return sonuc;
 }
