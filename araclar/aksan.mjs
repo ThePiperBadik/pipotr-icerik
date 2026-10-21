@@ -8,8 +8,10 @@
 // aksan işareti eklenir, sözcük sırası ve başka harf değişmez (betik her metinde aksanları sildiğinde eski ve yeni metnin
 // aynı kaldığını denetler, fark varsa durur).
 //
-// Uygulama: v3/<dil>/*.json içindeki metin değerleri (bağlantı hedefi l, blok türü t, kaynak satırı kaynak hariç). Tırnak
-// ("…", “…”, «…») ve parantez içi atlanır: özgün ad, alıntı ve İngilizce terim orada durur.
+// Uygulama: v3/<dil>/*.json içindeki metin değerleri (bağlantı hedefi l, blok türü t hariç). Tırnak ("…", “…”, «…») ve
+// parantez içi atlanır: özgün ad, alıntı ve İngilizce terim orada durur. Kaynak satırları (kaynak) ve madde etiketleri
+// (temel.json madde.<s>.t[]) yalnız KAYNAK_DILLERI'nde girer (es; tur 13, DI #16 P2 / ThePiperBadik/ipc#525); kaynak
+// satırında KAYNAK_HARIC'teki özel ad, Latince ad ve İngilizce/İtalyanca başlık sözcükleri atlanır (geçişler tek tek okundu).
 //
 //   node araclar/aksan.mjs              → v3/fr ve v3/es yazılır, özet basılır
 //   node araclar/aksan.mjs --kuru       → yalnız sayar
@@ -36,7 +38,21 @@ const KLASOR = path.join(KOK, surum);
 export const AKSAN_DILLERI = ['fr', 'es'];
 export const AKSAN_HEDEF = 0.03;
 const AKSAN = { fr: /[éèêàâçùûîôëïüÿœÉÈÊÀÂÇÙÛÎÔËÏ]/u, es: /[áéíóúñüÁÉÍÓÚÑÜ]/u };
-const HARIC = new Set(['l', 't', 'kaynak', 'url', 's', 'id']);
+const HARIC = new Set(['l', 'url', 's', 'id']);
+// Kaynak satırı ve etiket düzeltmesi açık diller (fr'de bu alanlar ölçülmedi; ayrı iş)
+export const KAYNAK_DILLERI = ['es'];
+// Kaynak satırında atlananlar. Küçük harfli giriş her biçimde, büyük harfle başlayan yalnız o biçimde atlanır.
+// brog, gulel: marka/damga (Mr. Brog, GULEL) · limon: Citrus limon (Latince) · cafe, rincon: ad (Cafe Artin, Foro Rincon del Pipa)
+// economia: İtalyanca (dell'economia varesina) · Division, Region: İngilizce ad (Division of Revenue, Arusha Region)
+const KAYNAK_HARIC = { es: new Set(['brog', 'gulel', 'limon', 'cafe', 'rincon', 'economia', 'Division', 'Region']) };
+/** Bu dilde bu anahtarın değeri işlenir mi; işlenirse atlanacak sözcükler (yoksa boş küme) */
+function alan(dil, k, dizi) {
+  if (HARIC.has(k)) return null;
+  if (k === 't' && !dizi) return null; // blok türü ('p', 'tbl' …)
+  if (k === 'kaynak' || k === 't') return KAYNAK_DILLERI.includes(dil) ? (k === 'kaynak' ? KAYNAK_HARIC[dil] ?? BOS : BOS) : null;
+  return BOS;
+}
+const BOS = new Set();
 const KORUMA = /(“[^”]*”|"[^"]*"|«[^»]*»|\([^()]*\))/u;
 const SOZCUK = /\p{L}+/gu;
 const UZUN = 120;
@@ -80,22 +96,26 @@ function kalipDuzelt(eslesme, liste) {
   return eslesme.replace(SOZCUK, (w) => buyukHarfle(w, dogru[i++]));
 }
 
-/** Dosyadaki her metin değerini gezer; degistir verilirse yeni değeri yazar */
-function gez(o, k, f) {
-  if (typeof o === 'string') return HARIC.has(k) || /^(m:|https?:)/.test(o) ? o : f(o, k);
-  if (Array.isArray(o)) return o.map((x) => gez(x, k, f));
+/** Dosyadaki her işlenen metin değerini gezer: f(metin, anahtar, atlanacaklar) yeni değeri döndürür */
+function gez(dil, o, k, f, dizi = false) {
+  if (typeof o === 'string') {
+    const h = alan(dil, k, dizi);
+    return !h || /^(m:|https?:)/.test(o) ? o : f(o, k, h);
+  }
+  if (Array.isArray(o)) return o.map((x) => gez(dil, x, k, f, true));
   if (o && typeof o === 'object') {
     const y = {};
-    for (const [kk, v] of Object.entries(o)) y[kk] = gez(v, kk, f);
+    for (const [kk, v] of Object.entries(o)) y[kk] = gez(dil, v, kk, f);
     return y;
   }
   return o;
 }
+const atla = (h, w) => !!h && (h.has(w) || h.has(w.toLowerCase()));
 
 const buyukHarfle = (w, d) => (w.length > 1 && w === w.toUpperCase() ? d.toUpperCase() : w[0] !== w[0].toLowerCase() ? d[0].toUpperCase() + d.slice(1) : d);
 
 /** Korunan bölümler (tırnak, parantez) dışında listedeki sözcükleri düzeltir */
-export function duzelt(metin, liste, say) {
+export function duzelt(metin, liste, say, haric) {
   return metin
     .split(KORUMA)
     .map((parca, i) =>
@@ -109,7 +129,7 @@ export function duzelt(metin, liste, say) {
             : parca
           ).replace(SOZCUK, (w) => {
             const d = liste.get(w.toLowerCase());
-            if (!d) return w;
+            if (!d || atla(haric, w)) return w;
             if (say) say.n++;
             return buyukHarfle(w, d);
           }),
@@ -125,10 +145,10 @@ export function aksanOlc(dil, liste = listeOku(dil)) {
   const say = { kesinHata: 0, harman: { uzun: 0, aksansiz: 0, hatali: 0 }, madde: { uzun: 0, aksansiz: 0, hatali: 0 } };
   for (const f of dosyalar(dil)) {
     const tur = f === 'harmanlar.json' ? 'harman' : f.startsWith('icerik-') ? 'madde' : null;
-    gez(oku(path.join(KLASOR, dil, f)), '', (s, k) => {
+    gez(dil, oku(path.join(KLASOR, dil, f)), '', (s, k, h) => {
       let hata = 0;
       const acik = s.split(KORUMA).filter((_, i) => i % 2 === 0).join(' ');
-      for (const w of acik.match(SOZCUK) ?? []) if (liste.has(w.toLowerCase())) hata++;
+      for (const w of acik.match(SOZCUK) ?? []) if (liste.has(w.toLowerCase()) && !atla(h, w)) hata++;
       if (liste.kalipRe) hata += (acik.match(liste.kalipRe) ?? []).length;
       say.kesinHata += hata;
       if (tur && (tur === 'madde' ? k === 'x' : k === 'z') && s.length >= UZUN) {
@@ -158,7 +178,7 @@ function oner(dil) {
   const buyuk = new Map();
   const art = (m, k) => m.set(k, (m.get(k) ?? 0) + 1);
   for (const f of dosyalar(dil))
-    gez(oku(path.join(KLASOR, dil, f)), '', (s) => {
+    gez(dil, oku(path.join(KLASOR, dil, f)), '', (s) => {
       const temiz = s.length >= 60 && re.test(s);
       const duz_ = s.split(KORUMA).filter((_, i) => i % 2 === 0).join(' ');
       for (const m of duz_.matchAll(SOZCUK)) {
@@ -221,8 +241,8 @@ if (ana) {
       const ham = fs.readFileSync(p, 'utf8');
       const eski = JSON.parse(ham);
       const once = say.n;
-      const yeni = gez(eski, '', (s) => {
-        const y = duzelt(s, liste, say);
+      const yeni = gez(dil, eski, '', (s, k, h) => {
+        const y = duzelt(s, liste, say, h);
         if (sil(y) !== sil(s)) throw new Error(`[aksan] metin aksan dışında değişti (${dil}/${f}): ${s.slice(0, 80)}`);
         return y;
       });
