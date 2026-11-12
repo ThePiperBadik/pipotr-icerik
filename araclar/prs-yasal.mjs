@@ -3,6 +3,7 @@
 // Kaynak: pipe-rotation main a78502d (veri akışı: README "Mimari"), ISPE sayfaları (biçim). Gizli değer yok; iletişim adresi
 // ISPE destek sayfasındaki şirket adresiyle aynı. Ürün metninde "tütün" ve "Smoking" geçmez (sahip kararları 13, 185).
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { sonIsle } from './yasal-son.mjs';
 
 const GUNCEL = { tr: '22 Ekim 2026', en: '22 October 2026', de: '22. Oktober 2026', fr: '22 octobre 2026', es: '22 de octubre de 2026', nl: '22 oktober 2026', sv: '22 oktober 2026', da: '22. oktober 2026' };
 const DILLER = ['tr', 'en', 'de', 'fr', 'es', 'nl', 'sv', 'da'];
@@ -304,7 +305,7 @@ const denetle = process.argv.includes('--denetle');
 mkdirSync(new URL('../prs/', import.meta.url), { recursive: true });
 for (const ad of Object.keys(SAYFALAR)) {
   const yol = new URL(`../prs/${ad}.html`, import.meta.url);
-  const yeni = sayfa(ad);
+  const yeni = sonIsle(sayfa(ad)); // #22, #24: JS'siz okunur, tek h1, CSP (yasal-son.mjs)
   if (denetle) {
     let eski = '';
     try { eski = readFileSync(yol, 'utf8'); } catch {}
